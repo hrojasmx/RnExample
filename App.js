@@ -15,8 +15,8 @@ import {
   StyleSheet,
   useColorScheme,
   Text,
-  View,
-} from 'react-native';
+  View, TextInput,
+} from "react-native";
 
 import {
   Colors,
@@ -35,6 +35,7 @@ const App: () => Node = () => {
 
   return (
     <View style={styles.container}>
+      <TextInput value="Hector Rojas" />
       <Text style={styles.text}>Welcome to this CI/CD</Text>
     </View>
   );
