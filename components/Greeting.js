@@ -36,10 +36,10 @@ export default class Greeting extends Component {
             borderColor: 'gray',
             borderWidth: 1,
           }}
-          placeholder="Write your Name..."
+          placeholder="Enter your Name..."
           onChangeText={name => this.setState({name})}
         />
-        <Text style={{marginTop: 10}}>Welcome to this CI/CD</Text>
+        <Text style={{marginTop: 10}}>Welcome to this CI/CD for React Native, {this.state.name}!</Text>
       </View>
     );
   }
